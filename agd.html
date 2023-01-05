@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Agendamento</title>
+    <link rel="stylesheet" href="agd.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1 class="title">CALCULADORA DE AGENDAMENTO</h1>
+        </header>
+        <section>
+            <div class="input">
+                <h2 class="spacetxt">AGENDAMENTO DE ENTREGA</h2>
+                <P class="spacetxt">Para o calcular a data de agendamento, basta inserir a data de entrega dinâmica abaixo e clicar em "Calcular"</P>
+                <input id="tkt" name="tkt" type="number" placeholder="Nº do ticket">
+                <input id="date" name="date" type="date">
+                <button class="bt" onclick="calcular()">Calcular</button>
+
+
+                <div id="resultado">
+                    <p></p>
+                </div>
+            </div>
+    
+        </section>
+        <footer>
+            <div class="description">
+                <p><em>* Vale lembrar que o agendamento de entrega está disponével somente para os estados de São Paulo, Minas Gerais, Mato Grosso do Sul e Rio de Janeiro. O prazo sofrerá um aumento de 20 dias corridos na primeira data e 35 dias corridos na segunda. Este processo garante somente a data de entrega do item, não incluindo o horário.</em></p> 
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <script src="agd.js"></script>
+</body>
+</html>
